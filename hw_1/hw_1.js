@@ -34,12 +34,7 @@ while (x <= 100) {
 
 // 5
 let age = prompt("Введите возраст");
-
-function checkAge(age) {
-    return age >= 14 && age <= 90;
-}
-
-if (checkAge(age)) {
+if (age >= 14 && age <= 90) {
     alert("True");
 } else {
     alert("False");
@@ -48,7 +43,7 @@ if (checkAge(age)) {
 
 // 6
 age = prompt("Введите возраст");
-if (!checkAge(age)) {
+if (!(age >= 14 && age <= 90)) {
     alert("True");
 } else {
     alert("False");
@@ -56,32 +51,43 @@ if (!checkAge(age)) {
 
 
 // 7
-// ????
+age = prompt("Введите возраст");
+if (age < 14 || age > 90) {
+    alert("True");
+} else {
+    alert("False");
+}
 
 
 // 8
 function makeNegative(num) {
-    return num > 0 ? num * -1 : num;
+    return num > 0 ? -num : num;
 }
 
 let num = prompt("Введите число");
-nym = makeNegative(num);
+num = makeNegative(num);
 alert(num);
 
 
 // 9
 function isDivisible(n, x, y) {
-    return n % x == 0 && n % y == 0;
+    if (n % x == 0){
+        if (n % y == 0){
+            return `n = ${n}, x = ${x}, y = ${y} => false because ${n} is neither divisible by ${x} nor ${y}`;
+        }
+        else {
+            return `n = ${n}, x = ${x}, y = ${y} => false because ${n} is not divisible by ${x}`
+        }
+    } else if(n % y == 0){
+        return `n = ${n}, x = ${x}, y = ${y} => false because ${n} is not divisible by ${y}`
+    }
+    return `n = ${n}, x = ${x}, y = ${y} => true because ${n} is divisible by ${x} and ${y}`;
 }
 
 let n = prompt("Введите число №1");
 let x = prompt("Введите число №2");
 let y = prompt("Введите число №3");
-if (isDivisible(n, x, y)) {
-    alert(`n = ${n}, x = ${x}, y = ${y} => true because ${n} is divisible by ${x} and ${y}`);
-} else {
-    alert(`n = ${n}, x = ${x}, y = ${y} => false because ${n} is neither divisible by ${x} and ${y}`);
-}
+alert(isDivisible(n, x, y));
 
 
 // 10
