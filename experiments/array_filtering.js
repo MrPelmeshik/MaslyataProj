@@ -22,6 +22,10 @@ function isUniqe4(arr) {
             return el;
     }).filter(f => f);
 }
+function isUniqe5(arr) {
+    // Аналог isUnique3
+    return arr.reduce((res, el, i) => arr.indexOf(el) == i ? [...res, el] : res, []);
+}
 
 let testCases = [
     [1, 2, 3, 4, 5],
@@ -48,4 +52,4 @@ let testCases = [
     [[null], [null]]
 ];
 testCases.forEach(testCase =>
-    console.log(testCase, "=>", isUniqe4(testCase)));
+    console.log(testCase, "=>", isUniqe1(testCase)));
