@@ -41,9 +41,9 @@ function checkingForTruth(testValues) {
 
 
 const testCases = [
-    [0, "", " ", null, undefined, NaN, "0"], // excepted all false
+    [0, "", " ", null, undefined, NaN, "0"], // expected all false
     [[], [""], [" "], [0], ["0"], [null], [undefined], [NaN]],
-    [1, "1", [1], ["1"]], // excepted all true
+    [1, "1", [1], ["1"]], // expected all true
 
 ];
 testCases.forEach(testCase => console.log(checkingForTruth(testCase)));
