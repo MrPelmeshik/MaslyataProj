@@ -57,6 +57,9 @@ input {
 .text-light-gray {
     color: #e7edf3;
 }
+.background-white {
+    background-color: white;
+}
 .background-orange {
     background-color: #ffbb42;
 }
@@ -66,18 +69,12 @@ input {
 .background-light-gray {
     background-color: #e7edf3;
 }
-.background-block-new {
+.background-block {
     margin-left: -10em;
     width: 100vw;
     height: 50%;
     z-index: -1;
     padding: 100px 10em 0 10em;
-}
-.background-block {
-    width: 100vw;
-    height: 100%;
-    position: absolute;
-    z-index: -1;
 }
 .wide-frames {
     padding: 150px 0;
@@ -338,4 +335,53 @@ input {
     display: flex;
     flex-direction: column;
     width: calc(100vw / 5);
+}
+.users {
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
+}
+.column-users {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.user-card {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+}
+.user-label {
+    margin-top: 15px;
+}
+.user-ico {
+    width: 20vw;
+}
+.user-textarea {
+    margin-left: 30px;
+}
+.user-ico_1 {
+    background: url(./content/Face_1.png) no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+}
+.user-ico_2 {
+    background: url(./content/Face_2.png) no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+}
+.user-ico_3 {
+    background: url(./content/Face_3.png) no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+}
+.user-ico_4 {
+    background: url(./content/Face_4.png) no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
 }
