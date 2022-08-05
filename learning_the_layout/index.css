@@ -290,38 +290,34 @@ input {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 5px 0;
     height: calc(80em / 10);
+}
+.ico-step {
+    width: calc(100vw / 7);
+}
+.arrow-step {
+    position: relative;
+    width: calc(100vw / 15);
 }
 .ico-step_1 {
     background: url(./content/Step_1.png) no-repeat center;
-    width: calc(100vw / 7);
 }
 .ico-step_2 {
     background: url(./content/Step_2.png) no-repeat center;
-    width: calc(100vw / 7);
 }
 .ico-step_3 {
     background: url(./content/Step_3.png) no-repeat center;
-    width: calc(100vw / 7);
 }
 .ico-step_4 {
     background: url(./content/Step_4.png) no-repeat center;
-    width: calc(100vw / 7);
 }
 .upper-arrow {
-    position: relative;
     top: -45px;
     background: url(./content/upperArrow.png) no-repeat center;
-    width: calc(100vw / 15);
-    z-index: 1;
 }
 .under-arrow {
-    position: relative;
     top: 45px;
     background: url(./content/underArrow.png) no-repeat center;
-    width: calc(100vw / 15);
-    z-index: 1;
 }
 .item-step_1 {
     display: flex;
