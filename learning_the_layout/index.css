@@ -48,8 +48,14 @@ input {
     text-align: center;
     vertical-align: middle;
 }
+.text-orange {
+    color: #ffbb42;
+}
 .text-white {
     color: white;
+}
+.text-light-gray {
+    color: #e7edf3;
 }
 .background-orange {
     background-color: #ffbb42;
@@ -124,18 +130,22 @@ input {
     margin: 10px 0;
 }
 .plan-1 {
-    position: relative;
-    padding: 40px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: white;
+    padding: 80px 70px;
     width: calc(100vw / 3);
-    height: auto;
+    background-color: white;
 }
 .plan-2 {
-    position: relative;
-    top: -40px;
-    padding: 80px 40px;
-    background-color: #709dca;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: -15px 0 -15px;
+    padding: 80px 70px;
     width: calc(100vw / 3);
+    background-color: #709dca;
 }
 .content-img_aboutUs {
     margin-top: -100px;
