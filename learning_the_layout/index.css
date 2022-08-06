@@ -196,9 +196,15 @@ input {
     padding-left:45px;
 }
 .header {
+    position: fixed;
+    top: 0;
     display: flex;
-    padding: 30px 0;
+    padding: 15px 10em;
     flex-direction: row;
+    background-color: white;
+    z-index: 2;
+    margin-left: -10em;
+    width: 100vw;
 }
 .logo {
     width: 45px;
