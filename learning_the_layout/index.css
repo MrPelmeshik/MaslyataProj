@@ -130,8 +130,7 @@ input {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: white;
-    padding: 80px 70px;
+    padding: 80px calc(8vw / 3);
     width: calc(100vw / 3);
     background-color: white;
 }
@@ -140,9 +139,8 @@ input {
     flex-direction: column;
     align-content: center;
     margin: -15px 0 -15px;
-    padding: 80px 70px;
+    padding: 80px calc(8vw / 3);
     width: calc(100vw / 3);
-    background-color: #709dca;
 }
 .content-img_aboutUs {
     margin-top: -100px;
@@ -337,15 +335,11 @@ input {
     width: calc(100vw / 5);
 }
 .users {
-    display: flex;
-    flex-direction: row;
+    display: grid;
     column-gap: 40px;
-}
-.column-users {
-    width: 40vw;
-    display: flex;
-    flex-direction: column;
-    row-gap: 30px;
+    row-gap: 15px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
 }
 .user-card {
     display: flex;
@@ -355,34 +349,32 @@ input {
 .user-label {
     margin-top: 15px;
 }
-.user-ico {
-    width: 20vw;
-}
+.user-ico {}
 .user-textarea {
     margin-left: 30px;
 }
 .user-ico_1 {
     background: url(./content/Face_1.png) no-repeat;
     background-size: contain;
-    width: 100%;
+    width: 3em;
     height: 100%;
 }
 .user-ico_2 {
     background: url(./content/Face_2.png) no-repeat;
     background-size: contain;
-    width: 100%;
+    width: 3em;
     height: 100%;
 }
 .user-ico_3 {
     background: url(./content/Face_3.png) no-repeat;
     background-size: contain;
-    width: 100%;
+    width: 3em;
     height: 100%;
 }
 .user-ico_4 {
     background: url(./content/Face_4.png) no-repeat;
     background-size: contain;
-    width: 100%;
+    width: 3em;
     height: 100%;
 }
 
