@@ -44,6 +44,9 @@ input {
 .align-center {
     margin: 0 auto;
 }
+.justify-content-center {
+    justify-content: center;
+}
 .text-align-center {
     text-align: center;
     vertical-align: middle;
@@ -378,18 +381,41 @@ input {
     height: 100%;
 }
 
+.phone {
+    display: flex;
+    justify-content: center;
+}
+.phone-ico {
+    background: url(./content/Phone.png) no-repeat;
+    width: 3em;
+    height: 3em;
+}
 .messenger-ico {
-
+    display: flex;
+    justify-content: center;
+    height: 30px;
 }
 .ico-twitter {
-
+    background: url(./content/Twitter.png) no-repeat;
+    background-size: contain;
+    width: 3em;
+    height: 100%;
 }
 .ico-facebook {
-
+    background: url(./content/Facebook.png) no-repeat;
+    background-size: contain;
+    width: 3em;
+    height: 100%;
 }
 .ico-google-plus {
-
+    background: url(./content/GooglePlus.png) no-repeat;
+    background-size: contain;
+    width: 3em;
+    height: 100%;
 }
 .ico-linkedin {
-
+    background: url(./content/LinkedIn.png) no-repeat;
+    background-size: contain;
+    width: 3em;
+    height: 100%;
 }
