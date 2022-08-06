@@ -21,6 +21,11 @@ button {
     padding: 10px 50px;
     font-size: 13pt;
 }
+button:hover {
+    color: white;
+    border: none;
+    background: #bb8421;
+}
 input {
     height: 45px;
     font-size: 13pt;
@@ -28,6 +33,11 @@ input {
     border: none;
     display: block;
 }
+a {}
+a:link {
+    text-decoration: none;
+}
+a:hover {}
 
 
 .content {
